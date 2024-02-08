@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="gui" default="true" />
+  <!-- Set the argument for the URDF file -->
+  <param name="robot_description" command="$(find xacro)/xacro '$(find simple_simulation)/urdf/simple_robot_with_camera.xacro'" />
+
+  <!-- Start Gazebo with my_robot model -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!-- <arg name="world_name" value="$(find ai_robot_support)/worlds/ai_robot.world"/> -->
+     <arg name="debug" value="false" />
+      <arg name="gui" value="true" />
+      <arg name="paused" value="false"/>
+      <arg name="use_sim_time" value="true"/>
+      <arg name="headless" value="false"/>
+      <arg name="verbose" value="true"/>
+  </include>
+
+  <!-- <arg name="world_file" default="$(find ai_robot_support)/world/ai_robot.world"/>
+  <node name="gazebo" pkg="gazebo_ros" type="gazebo" args="-s libgazebo_ros_init.so $(arg world_file)">
+    <param name="use_sim_time" value="true"/>
+    <param name="gui" value="true"/>
+  </node> -->
+
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen"
+        args="-urdf -model perspective -param robot_description"/>
+  
+  <!-- ROBOT SEMANTIC HAS ALL THE JOINT AND ALLOW MOVEIT TO CONTROL IT -->
+  <!-- NEEDED TO BE CHANGED IF WE WANT TO USE DIFFERENT MODEL -->
+  <!-- ONLY GIVE THE MOVIEit CONFIGR file which robot is added -->
+
+  <!-- <param name="robot_description_semantic" command="$(find xacro)/xacro '$(find ur10e_moveit_config)/config/ur10e.srdf'" /> -->
+  
+  <node if="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node unless="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ai_robot_support)/launch/ai_robot.rviz" required="true" /> -->
+  <node name="rviz" pkg="rviz" type="rviz" output="screen" args = "-d $(find simple_simulation)/rviz/urdf.rviz" />
+</launch>
