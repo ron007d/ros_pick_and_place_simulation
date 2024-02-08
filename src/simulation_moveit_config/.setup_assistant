@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: simple_simulation
+    relative_path: urdf/simple_robot_with_camera.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/sample_robot.srdf
+  CONFIG:
+    author_name: ron
+    author_email: ron@mail.com
+    generated_timestamp: 1707371882
