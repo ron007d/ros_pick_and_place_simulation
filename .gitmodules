@@ -1,0 +1,6 @@
+[submodule "src/grippers/franka_ros"]
+	path = src/grippers/franka_ros
+	url = https://github.com/frankaemika/franka_ros.git
+[submodule "src/robots/universal_robot"]
+	path = src/robots/universal_robot
+	url = https://github.com/ros-industrial/universal_robot.git
