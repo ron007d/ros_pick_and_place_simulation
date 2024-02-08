@@ -4,3 +4,9 @@
 [submodule "src/robots/universal_robot"]
 	path = src/robots/universal_robot
 	url = https://github.com/ros-industrial/universal_robot.git
+[submodule "src/patches/general-message-pkgs"]
+	path = src/patches/general-message-pkgs
+	url = https://github.com/JenniferBuehler/general-message-pkgs.git
+[submodule "src/patches/gazebo-pkgs"]
+	path = src/patches/gazebo-pkgs
+	url = https://github.com/JenniferBuehler/gazebo-pkgs.git
