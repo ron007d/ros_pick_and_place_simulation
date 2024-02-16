@@ -1,7 +1,6 @@
-<center>
-    <h1>Pick and place Demo</h1>
-    <h2>ROS, GAZEBO & OPENCV</h2>
-</center>
+
+<h1 align="center">Pick and place Demo</h1>
+<h2 align="center">ROS, GAZEBO & OPENCV</h2>
 
 ![](./gif/pick_place_demo.gif)
 
