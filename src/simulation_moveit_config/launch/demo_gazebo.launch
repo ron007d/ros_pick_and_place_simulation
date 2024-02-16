@@ -18,4 +18,7 @@
     <arg name="load_robot_description" value="false" />
     <arg name="moveit_controller_manager" value="ros_control" />
   </include>
+
+
+  <node pkg="pick_and_place" name="live_object_detector.py" type="live_object_detector.py" output="screen"/>
 </launch>

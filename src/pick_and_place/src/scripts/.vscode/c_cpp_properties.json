@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/devel/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/devel/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/src/utilities/async_web_server_cpp/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/cartesian_robot_test/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/src/robots/franka_ros/franka_control/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/src/robots/franka_ros/franka_example_controllers/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/src/robots/franka_ros/franka_gazebo/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/src/robots/franka_ros/franka_gripper/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/src/robots/franka_ros/franka_hw/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/patches/gazebo-pkgs/gazebo_grasp_plugin/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/patches/gazebo-pkgs/gazebo_state_plugins/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/patches/gazebo-pkgs/gazebo_test_tools/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/patches/gazebo-pkgs/gazebo_version_helpers/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/patches/gazebo-pkgs/gazebo_world_plugin_loader/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/robotiq_gripper_test/src/ur5_with_robotiq_gripper/icl_robotiq_2f_gripper_action_server/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/src/robots/kuka_experimental/kuka_eki_hw_interface/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/src/robots/kuka_experimental/kuka_rsi_hw_interface/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/patches/general-message-pkgs/object_msgs_tools/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/patches/roboticsgroup_upatras_gazebo_plugins/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/grippers/robotiq_2finger_grippers/robotiq_2f_gripper_control/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/src/accessories/robotiq_gripper/robotiq_gazebo/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/patches/rosee_gazebo_plugins/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/src/robots/universal_robot/ur_kinematics/include/**",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/src/utilities/web_video_server/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

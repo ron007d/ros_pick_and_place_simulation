@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/devel/lib/python3/dist-packages",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ron/SECONDARY_SSD/Robot_OS/techolution/devel/lib/python3/dist-packages",
+        "/home/ron/SECONDARY_SSD/Robot_OS/cloudties/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
