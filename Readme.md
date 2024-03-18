@@ -7,7 +7,7 @@
 ### Requirements
 - Install opencv for python
 ```bash
-pip install opencv-python
+pip install opencv-python pandas
 ```
 - install scikit learn for regression model
 ```bash
@@ -15,7 +15,7 @@ pip install -U scikit-learn
 ```
 - install catkin tools for building
 ```bash
-sudo apt install python3-catkin-tools
+sudo apt install python3-catkin-tools ros-$ROS_DISTRO-moveit ros-$ROS_DISTRO-joint-trajectory-controller
 ```
 - install extra for patches to work
 ```bash
