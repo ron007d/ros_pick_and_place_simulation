@@ -13,11 +13,24 @@ pip install opencv-python
 ```bash
 pip install -U scikit-learn
 ```
+- install catkin tools for building
+```bash
+sudo apt install python3-catkin-tools
+```
+- install extra for patches to work
+```bash
+sudo apt install \
+    ros-$ROS_DISTRO-gazebo-ros \
+    ros-$ROS_DISTRO-eigen-conversions \
+    ros-$ROS_DISTRO-object-recognition-msgs \
+    ros-$ROS_DISTRO-roslint
+```
+> Currently this has been tested on ros-noetic
 
 ### How to run
 1. Clone this repo with submodules
 ```bash
-    git clone https://github.com/ron007/ros_pick_and_place_simulation.git --recurse-submodules
+git clone https://github.com/ron007d/ros_pick_and_place_simulation.git --recurse-submodules
 ```
 2. Build the package
 ```bash
@@ -38,3 +51,13 @@ rosrun pick_and_place pick_and_place.py
 
 
 ## 👍 More information will be added soon
+
+- Python-based framework using OpenCV and ROS (control)
+- Identifies objects with OpenCV (potential enhancements)
+- Employs diverse grasping strategies
+- ROS & MoveIt for collision-free motion planning
+- Modular design for extensibility
+- Configurable parameters for easy experimentation
+- Leverages Gazebo for high-fidelity simulation
+- Logging & analysis for performance optimization
+- Containerization potential for sharing & deployment
