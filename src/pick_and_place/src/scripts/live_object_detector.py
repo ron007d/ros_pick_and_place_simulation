@@ -53,7 +53,7 @@ class Object_detector:
                 
                 rect = cv2.minAreaRect(contour)
                 box = cv2.boxPoints(rect)
-                box = np.int0(box)
+                box = np.int64(box)
                 angle = rect[-1]
                 # angle = 0  # You need to calculate the angle based on the contour orientation
                 
